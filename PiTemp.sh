@@ -21,9 +21,10 @@ do
 	echo
 
 	size=$(ls -la temppi.log | awk '{print $5}')
-	if [ $? > "100000" ]
+	max="35000"
+	if [ $size -gt $max ]
 	then
-		tail -n -1200 temppi.log > temppi.tmp && yes | mv temppi.tmp temppi.log
+		tail -n -600 temppi.log > temppi.tmp && yes | mv temppi.tmp temppi.log
 	fi
 	sleep 1
 done
