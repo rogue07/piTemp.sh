@@ -1,6 +1,6 @@
 #!/bin/bash
 # ram
-# check CPU temp on a pi for 1 minute
+# check CPU temp on a pi with an average of the last minute
 # ver=0.3
 
 while true
