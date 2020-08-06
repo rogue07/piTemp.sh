@@ -1,2 +1,2 @@
 # PiTemp.sh
-Chech temp of pi4 cpu for 1 minute
+Chech current CPU temp along with the average going back 24 hours.
